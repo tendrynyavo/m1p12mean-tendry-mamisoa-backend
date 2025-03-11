@@ -5,8 +5,11 @@ const routes = require('./routes');
 const app = express();
 const dotenv = require('dotenv');
 
+const authMiddleware = require('./middlewares/authMiddleware');
+
 app.use(cors());
 app.use(express.json());
+app.use('/protected', authMiddleware);
 
 const env = process.env.NODE_ENV || 'development';
 const envFile = `.env.${env}`;
