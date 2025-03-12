@@ -4,36 +4,36 @@ async function createUser(data) {
     try {
         const user = new User(data);
         await user.save();
-        return { Success: true, Message: "", Data: user };
+        return user;
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 
 async function getAllUsers() {
     try {
         const users = await User.find();
-        return { Success: true, Message: "", Data: users };
+        return users;
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 
 async function updateUserById(id, data) {
     try {
         const user = await User.findByIdAndUpdate(id, data, { new: true });
-        return { Success: true, Message: "", Data: user };
+        return user;
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 
 async function deleteUserById(id) {
     try {   
         await User.findByIdAndDelete(id);
-        return { Success: true, Message: "User deleted" };
+        return "User supprimé";
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 

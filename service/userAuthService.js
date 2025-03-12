@@ -4,38 +4,38 @@ const UserAuth = require('../models/UserAuth');
 
 async function createUserAuth(data) {
     try {
-        const user = new UserAuth(data);
-        await user.save();
-        return { Success: true, Message: "", Data: user };
+        const userAuth = new UserAuth(data);
+        await userAuth.save();
+        return userAuth;
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 
 async function getAllUserAuths() {
     try {
-        const users = await UserAuth.find();
-        return { Success: true, Message: "", Data: users };
+        const userAuths = await UserAuth.find();
+        return userAuths;
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 
 async function updateUserAuthById(id, data) {
     try {
-        const user = await UserAuth.findByIdAndUpdate(id, data, { new: true });
-        return { Success: true, Message: "", Data: user };
+        const userAuth = await UserAuth.findByIdAndUpdate(id, data, { new: true });
+        return userAuth;
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 
 async function deleteUserAuthById(id) {
     try {   
         await UserAuth.findByIdAndDelete(id);
-        return { Success: true, Message: "UserAuth deleted" };
+        return  "UserAuth supprimé";
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 

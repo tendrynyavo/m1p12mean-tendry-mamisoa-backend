@@ -5,11 +5,11 @@ async function getUserDetailsByEmailAndPassword(email, password) {
     try {
         const user = await User.findOne({ email: email, password: password });
         if (!user) {
-            return { Success: false, Message: "User not found" };
+            throw new Error("User not found");
         }
-        return { Success: true, Message: "", Data: user };
+        return user;
     } catch (error) {
-        return { Success: false, Message: "An error occured", Data: error };
+        throw error;
     }
 }
 function generateToken(payload) {
@@ -22,15 +22,12 @@ function generateToken(payload) {
 
 async function generateTokenFromUserDetails(data) {
     const userDetails = await getUserDetailsByEmailAndPassword(data.email, data.password);
-    if (!userDetails.Success) {
-        return { Success: false, Message: "An error occured", Data: error };
-    }
     const payload = {
         id: userDetails._id,
         email: userDetails.email,
         role: userDetails.role
     };
-    return { Success: true, Message: "", Data: generateToken(payload) };
+    return generateToken(payload);
 }
 
 module.exports = {
