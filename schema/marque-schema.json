@@ -1,0 +1,82 @@
+[
+    {
+        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e01" },
+        "nom": "Renault",
+        "modeles": [
+            { 
+                "_id": { "$oid": "613f1a73a4d8b3a74d3b6e02" }, 
+                "nom": "Clio IV",
+                "annee": 2012,
+                "motorisation": [
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e03" },
+                        "nom": "1.5 dCi 90",
+                        "type": "Essence"
+                    },
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e04" },
+                        "nom": "1.2 TCe 120",
+                        "type": "Essence"
+                    }
+                ]
+            },
+            { 
+                "_id": { "$oid": "613f1a73a4d8b3a74d3b6e05" }, 
+                "nom": "Mégane",
+                "annee": 2016,
+                "motorisation": [
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e06" },
+                        "nom": "1.5 dCi 90",
+                        "type": "Essence"
+                    },
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e07" },
+                        "nom": "1.2 TCe 120",
+                        "type": "Electrique"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e08" },
+        "nom": "Peugeot",
+        "modeles": [
+            { 
+                "_id": { "$oid": "613f1a73a4d8b3a74d3b6e09" }, 
+                "nom": "208",
+                "annee": 2012,
+                "motorisation": [
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e0a" },
+                        "nom": "1.5 BlueHDi 100",
+                        "type": "Essence"
+                    },
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e0b" },
+                        "nom": "1.2 PureTech 82",
+                        "type": "Essence"
+                    }
+                ]
+            },
+            { 
+                "_id": { "$oid": "613f1a73a4d8b3a74d3b6e0c" }, 
+                "nom": "308",
+                "annee": 2013,
+                "motorisation": [
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e0d" },
+                        "nom": "1.5 BlueHDi 100",
+                        "type": "Diesel"
+                    },
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6e0e" },
+                        "nom": "1.2 PureTech 82",
+                        "type": "Diesel"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,7 @@
+{
+    "_id": "client_001",
+    "nom": "Dupont",
+    "prenom": "Jean",
+    "login": "jdupont",
+    "password": "hashed_password"
+}  

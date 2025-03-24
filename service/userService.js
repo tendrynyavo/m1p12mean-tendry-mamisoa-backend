@@ -1,40 +1,23 @@
 const User = require('../models/User');
 
 async function createUser(data) {
-    try {
-        const user = new User(data);
-        await user.save();
-        return user;
-    } catch (error) {
-        throw error;
-    }
+    const user = new User(data);
+    await user.save();
+    return user;
 }
 
 async function getAllUsers() {
-    try {
-        const users = await User.find();
-        return users;
-    } catch (error) {
-        throw error;
-    }
+    const users = await User.find();
+    return users;
 }
 
 async function updateUserById(id, data) {
-    try {
-        const user = await User.findByIdAndUpdate(id, data, { new: true });
-        return user;
-    } catch (error) {
-        throw error;
-    }
+    const user = await User.findByIdAndUpdate(id, data, { new: true });
+    return user;
 }
 
 async function deleteUserById(id) {
-    try {   
-        await User.findByIdAndDelete(id);
-        return "User supprimé";
-    } catch (error) {
-        throw error;
-    }
+    await User.findByIdAndDelete(id);
 }
 
 module.exports = {

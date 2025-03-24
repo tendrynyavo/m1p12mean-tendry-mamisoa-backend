@@ -2,15 +2,11 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
 async function getUserDetailsByEmailAndPassword(email, password) {
-    try {
-        const user = await User.findOne({ email: email, password: password });
-        if (!user) {
-            throw new Error("User not found");
-        }
-        return user;
-    } catch (error) {
-        throw error;
+    const user = await User.findOne({ email: email, password: password });
+    if (!user) {
+        throw new Error("User not found");
     }
+    return user;
 }
 function generateToken(payload) {
     const creationTime = Math.floor(Date.now() / 1000);

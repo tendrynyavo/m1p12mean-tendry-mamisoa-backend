@@ -4,20 +4,20 @@ const { createUser, getAllUsers, updateUserById, deleteUserById } = require('../
 
 // Créer un user
 router.post('/', async (req, res) => {
-    try{
+    try {
         const data = await createUser(req.body);
         return res.json({ Success: true, Message: "", Data: data });
-    }catch(error){
+    } catch(error) {
         return res.json({ Success: false, Message: error.message });
     }
 });
 
 // Lire toutes les user
 router.get('/', async (req, res) => {
-    try{
+    try {
         const datas = await getAllUsers();
         return res.json({ Success: true, Message: "", Data: datas });
-    }catch(error){
+    } catch(error) {
         return res.json({ Success: false, Message: error.message });
     }
 });
@@ -34,10 +34,10 @@ router.put('/:id', async (req, res) => {
 
 // Supprimer un user
 router.delete('/:id', async (req, res) => {
-    try{
+    try {
         const response = await deleteUserById(req.params.id);
         return res.json({ Success: true, Message: "", Data: response });
-    }catch(error){
+    } catch(error) {
         return res.json({ Success: false, Message: error.message });
     }
 });

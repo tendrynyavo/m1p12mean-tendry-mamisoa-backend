@@ -1,0 +1,9 @@
+{
+    "_id": "mecanicien_001",
+    "nom": "Martin",
+    "prenom": "Paul",
+    "login": "pmartin",
+    "password": "hashed_password",
+    "contact": "0123456789"
+  }
+  

@@ -18,6 +18,10 @@ let routes = [
     {
         path: '/categories',
         route: require('./routes/categoryRoutes')
+    },
+    {
+        path: '/marques',
+        route: require('./routes/marqueRoutes')
     }
 ]; 
 

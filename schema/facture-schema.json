@@ -1,0 +1,34 @@
+[
+    {
+        "_id": "facture_001",
+        "date_facture": "2025-03-03",
+        "client": "client_001",
+        "reference" : "ref_001",
+        "status": 1,
+        "pieces": [
+            {
+                "_id": "piece_003", 
+                "libelle": "Filtre à huile",
+                "quantite": 1,
+                "prix_unitaire": 25.5,
+                "unite": "pièce"
+            }
+        ]
+    },
+    {
+        "_id": "facture_002",
+        "date_facture": "2025-03-03",
+        "reference" : "ref_002",
+        "client": "client_001",
+        "status": 1,
+        "pieces": [
+            {
+                "_id": "piece_003", 
+                "libelle": "Filtre à huile",
+                "quantite": 1,
+                "prix_unitaire": 25.5,
+                "unite": "pièce"
+            }
+        ]
+    }
+]
