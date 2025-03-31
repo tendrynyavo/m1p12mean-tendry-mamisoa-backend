@@ -1,37 +1,5 @@
 const mongoose = require('mongoose');
 
-// Piece Schema (for both diagnostics and realizations)
-const PieceSchema = new mongoose.Schema({
-    nom: { type: String, required: true },
-    quantite: { type: Number, required: true },
-    prix_unitaire: { type: Number, required: true },
-    unite: { type: String, required: true }
-});
-
-// Prestation Schema (for both diagnostics and realizations)
-const PrestationSchema = new mongoose.Schema({
-    nom: { type: String, required: true },
-    temps_estime: { type: Number, required: true },
-    pieces: [PieceSchema]
-});
-
-// Mecanicien Schema (for diagnostics)
-const MecanicienSchema = new mongoose.Schema({
-    nom: { type: String, required: true },
-    prenom: { type: String, required: true },
-    contact: { type: String }
-});
-
-// Diagnostic Schema
-const DiagnosticSchema = new mongoose.Schema({
-    date_debut: { type: Date, required: true },
-    date_fin: { type: Date, required: true },
-    reference: { type: String, required: true },
-    status: { type: Number, required: true },
-    mecanicien: MecanicienSchema,
-    prestations: [PrestationSchema]
-});
-
 // Facture Schema
 const FactureSchema = new mongoose.Schema({
     date_facture: { type: Date, required: true },
@@ -75,7 +43,6 @@ const VoitureSchema = new mongoose.Schema({
         ref: 'Client',
         required: true
     },
-    diagnostics: [DiagnosticSchema],
     realisations: [RealisationSchema]
 }, {
     timestamps: true

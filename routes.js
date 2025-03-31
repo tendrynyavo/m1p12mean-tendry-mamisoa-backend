@@ -30,6 +30,14 @@ let routes = [
     {
         path: '/motorisations',
         route: require('./routes/motorisationRoutes')
+    },
+    {
+        path: '/besoins',
+        route: require('./routes/besoinRoutes')
+    },
+    {
+        path: '/diagnostics',
+        route: require('./routes/diagnosticRoutes')
     }
 ]; 
 
