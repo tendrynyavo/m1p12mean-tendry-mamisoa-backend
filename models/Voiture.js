@@ -42,7 +42,7 @@ const FactureSchema = new mongoose.Schema({
         prix_unitaire: { type: Number, required: true },
         unite: { type: String, required: true }
     }]
-});
+}); 
 
 // Realisation Schema
 const RealisationSchema = new mongoose.Schema({
@@ -71,8 +71,9 @@ const VoitureSchema = new mongoose.Schema({
         required: true
     },
     client: {
-        nom: { type: String, required: true },
-        prenom: { type: String, required: true }
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Client',
+        required: true
     },
     diagnostics: [DiagnosticSchema],
     realisations: [RealisationSchema]

@@ -22,6 +22,14 @@ let routes = [
     {
         path: '/marques',
         route: require('./routes/marqueRoutes')
+    },
+    {
+        path: '/voitures',
+        route: require('./routes/voitureRoutes')
+    },
+    {
+        path: '/motorisations',
+        route: require('./routes/motorisationRoutes')
     }
 ]; 
 
