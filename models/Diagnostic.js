@@ -34,6 +34,7 @@ const PrestationSchema = new mongoose.Schema({
 }, { _id: false });
 
 const DiagnosticSchema = new mongoose.Schema({
+    voiture: { type: mongoose.Schema.Types.ObjectId, ref: 'Voiture', required: true },
     dateDebut: { type: Date, required: true },
     dateFin: { type: Date },
     reference: { type: String, required: true },

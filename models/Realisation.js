@@ -16,6 +16,7 @@ const PrestationSchema = new mongoose.Schema({
 });
 
 const RealisationSchema = new mongoose.Schema({
+    voiture: { type: mongoose.Schema.Types.ObjectId, ref: 'Voiture', required: true },
     dateDebut: { type: Date, required: true },
     dateFin: { type: Date, required: true },
     reference: { type: String, required: true },
