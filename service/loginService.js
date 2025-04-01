@@ -26,6 +26,16 @@ async function generateTokenFromUserDetails(data) {
     return generateToken(payload);
 }
 
+async function getUserDetailsByToken(token) {
+    const decoded = getDetailsFromToken(token, process.env.SECRET_KEY);
+    const user = await User.findOne({ email: email });
+    if (!user) {
+        throw new Error("User not found");
+    }
+    return user;
+}
+
 module.exports = {
-    generateTokenFromUserDetails
+    generateTokenFromUserDetails,
+    getUserDetailsByToken
 };

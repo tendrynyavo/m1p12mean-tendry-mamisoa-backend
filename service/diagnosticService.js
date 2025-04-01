@@ -9,6 +9,14 @@ const getDiagnostics = async () => {
     }
 };
 
+const getDiagnosticsByMecanicien = async (mecanicienId) => {
+    try {
+        return await Diagnostic.find({ mecanicien: mecanicienId }).populate('mecanicien');
+    } catch (error) {
+        throw new Error(`Error fetching diagnostics: ${error.message}`);
+    }
+}
+
 // Get diagnostic by id
 const getDiagnosticById = async (id) => {
     try {
@@ -65,8 +73,9 @@ const deleteDiagnostic = async (id) => {
 
 module.exports = {
     getDiagnostics,
+    getDiagnosticsByMecanicien,
     getDiagnosticById,
     createDiagnostic,
-    updateDiagnostic,
-    deleteDiagnostic
+    updateDiagnostic,   
+    deleteDiagnostic,
 };
