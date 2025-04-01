@@ -9,7 +9,10 @@ const authMiddleware = require('./middlewares/authMiddleware');
 
 app.use(cors());
 app.use(express.json());
-app.use('/protected', authMiddleware);
+
+app.use('/marques', authMiddleware);
+app.use('/voitures', authMiddleware);
+app.use('/motorisations', authMiddleware);
 
 const env = process.env.NODE_ENV || 'development';
 const envFile = `.env.${env}`;

@@ -1,0 +1,90 @@
+[
+    {
+        "motorisation": "613f1a73a4d8b3a74d3b6f01",
+        "prestations": [
+            {
+                "nom": "Vidange",
+                "tempsEstime": 1,
+                "pieces": [
+                    {
+                        "nom": "Filtre à huile",
+                        "unite": "pièce",
+                        "quantite": 1,
+                        "prixUnitaire": 10
+                    },
+                    {
+                        "nom": "Huile moteur",
+                        "unite": "litre",
+                        "quantite": 8,
+                        "prixUnitaire": 30
+                    }
+                ]
+            },
+            {
+                "nom": "Freinage",
+                "tempsEstime": 2,
+                "pieces": [
+                    {
+                        "nom": "Disques de frein",
+                        "quantite": 2,
+                        "prixUnitaire": 50,
+                        "unite": "pièce"
+                    },
+                    {
+                        "nom": "Plaquettes de frein",
+                        "quantite": 1,
+                        "prixUnitaire": 30,
+                        "unite": "jeu"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "motorisation": { "$oid": "613f1a73a4d8b3a74d3b6f11" },
+        "prestations": [
+            {
+                "_id": { "$oid": "613f1a73a4d8b3a74d3b6f12" },
+                "nom": "Vidange",
+                "temps_estime": 1,
+                "pieces": [
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6f13" },
+                        "nom": "Filtre à huile",
+                        "quantite": 1,
+                        "prix_unitaire": 10,
+                        "unite": "pièce"
+                    },
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6f14" },
+                        "nom": "Huile moteur",
+                        "quantite": 8,
+                        "prix_unitaire": 30,
+                        "unite": "litre"
+                    }
+                ]
+            },
+            {
+                "_id": { "$oid": "613f1a73a4d8b3a74d3b6f15" },
+                "nom": "Freinage",
+                "temps_estime": 2,
+                "pieces": [
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6f16" },
+                        "nom": "Disques de frein",
+                        "quantite": 2,
+                        "prix_unitaire": 50,
+                        "unite": "pièce"
+                    },
+                    {
+                        "_id": { "$oid": "613f1a73a4d8b3a74d3b6f17" },
+                        "nom": "Plaquettes de frein",
+                        "quantite": 1,
+                        "prix_unitaire": 30,
+                        "unite": "jeu"
+                    }
+                ]
+            }
+        ]
+    }
+]

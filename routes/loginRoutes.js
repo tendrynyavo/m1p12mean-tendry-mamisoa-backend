@@ -3,8 +3,12 @@ const router = express.Router();
 const { generateTokenFromUserDetails } = require('../service/loginService');
 
 router.post('/', async (req, res) => {
-    const response = await generateTokenFromUserDetails(req.body);
-    return res.json(response);
+    try{
+        const data = await generateTokenFromUserDetails(req.body);
+        return res.json({ Success: true, Message: "", Data: data });
+    }catch(error){
+        return res.json({ Success: false, Message: error.message });
+    }
 });
 
 module.exports = router;

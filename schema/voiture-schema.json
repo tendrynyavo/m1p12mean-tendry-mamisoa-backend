@@ -1,0 +1,140 @@
+{
+    "_id": "voiture_001",
+    "immatricule": "AB-123-CD",
+    "motorisation": "motorisation_001",
+    "client": {
+      "_id": "client_001",
+      "nom": "Dupont",
+      "prenom": "Jean"
+    },
+    "diagnostics": [
+      {
+        "_id": "diagnostic_001",
+        "date_debut": "2025-03-01T09:00:00Z",
+        "date_fin": "2025-03-01T10:00:00Z",
+        "reference": "DIAG-2025-001",
+        "status": 1,
+        "mecanicien": {
+          "_id": "mecanicien_001",
+          "nom": "Martin",
+          "prenom": "Paul",
+          "contact": "0123456789"
+        },
+        "prestations": [
+            {
+                "_id": "prestation_001",
+                "nom": "Vidange",
+                "temps_estime": 1,
+                "pieces": [
+                    {
+                        "_id": "piece_001",
+                        "nom": "Filtre à huile",
+                        "quantite": 1,
+                        "prix_unitaire": 10,
+                        "unite": "pièce"
+                    },
+                    {
+                        "_id": "piece_002",
+                        "nom": "Huile moteur",
+                        "quantite": 8,
+                        "prix_unitaire": 30,
+                        "unite": "litre"
+                    }
+                ]
+            },
+            {
+                "_id": "prestation_002",
+                "nom": "Freinage",
+                "temps_estime": 2,
+                "pieces": [
+                    {
+                        "_id": "piece_003",
+                        "nom": "Disques de frein",
+                        "quantite": 2,
+                        "prix_unitaire": 50,
+                        "unite": "pièce"
+                    },
+                    {
+                        "_id": "piece_004",
+                        "nom": "Plaquettes de frein",
+                        "quantite": 1,
+                        "prix_unitaire": 30,
+                        "unite": "jeu"
+                    }
+                ]
+            }
+        ]
+      }
+    ],
+    "realisations": [
+      {
+        "_id": "realisation_001",
+        "date_debut": "2025-03-02T08:30:00Z",
+        "date_fin": "2025-03-02T11:00:00Z",
+        "reference": "REAL-2025-001",
+        "status": 1,
+        "equipe": [
+          { "_id": "mecanicien_001", "nom": "Martin", "prenom": "Paul" },
+          { "_id": "mecanicien_002", "nom": "Durand", "prenom": "Luc" }
+        ],
+        "prestations": [
+            {
+                "_id": "prestation_001",
+                "nom": "Vidange",
+                "temps_estime": 1,
+                "pieces": [
+                    {
+                        "_id": "piece_001",
+                        "nom": "Filtre à huile",
+                        "quantite": 1,
+                        "prix_unitaire": 10,
+                        "unite": "pièce"
+                    },
+                    {
+                        "_id": "piece_002",
+                        "nom": "Huile moteur",
+                        "quantite": 8,
+                        "prix_unitaire": 30,
+                        "unite": "litre"
+                    }
+                ]
+            },
+            {
+                "_id": "prestation_002",
+                "nom": "Freinage",
+                "temps_estime": 2,
+                "pieces": [
+                    {
+                        "_id": "piece_003",
+                        "nom": "Disques de frein",
+                        "quantite": 2,
+                        "prix_unitaire": 50,
+                        "unite": "pièce"
+                    },
+                    {
+                        "_id": "piece_004",
+                        "nom": "Plaquettes de frein",
+                        "quantite": 1,
+                        "prix_unitaire": 30,
+                        "unite": "jeu"
+                    }
+                ]
+            }
+        ],
+        "facture": {
+            "_id": "facture_001",
+            "date_facture": "2025-03-03",
+            "status": 1,
+            "pieces": [
+                {
+                    "_id": "piece_003", 
+                    "libelle": "Filtre à huile",
+                    "quantite": 1,
+                    "prix_unitaire": 25.5,
+                    "unite": "pièce"
+                }
+            ]
+        }
+      }
+    ]
+}
