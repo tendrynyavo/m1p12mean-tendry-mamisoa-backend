@@ -1,10 +1,9 @@
 const { getDetailsFromToken, isTokenExpired } = require('../service/authService');
 
 const authMiddleware = (req, res, next) => {
-    if (req.originalUrl === "/login/") {
+    if (req.originalUrl === "/login/" || req.originalUrl === "/users/") {
         return next();
     }
-
     const token = req.headers['authorization'];
     
     if (!token) {

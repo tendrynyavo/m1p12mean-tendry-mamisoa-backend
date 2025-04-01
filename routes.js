@@ -4,12 +4,12 @@ let routes = [
         route: require('./routes/loginRoutes')
     },
     {
-        path: '/users-auth',
-        route: require('./routes/userAuthRoutes')
-    },
-    {
         path: '/users',
         route: require('./routes/userRoutes')
+    },
+    {
+        path: '/users-auth',
+        route: require('./routes/userAuthRoutes')
     },
     {
         path: '/articles',
