@@ -20,10 +20,7 @@ const RealisationSchema = new mongoose.Schema({
     dateFin: { type: Date, required: true },
     reference: { type: String, required: true },
     status: { type: Number, required: true },
-    equipe: [{
-        nom: { type: String, required: true },
-        prenom: { type: String, required: true }
-    }],
+    equipe: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Mecanicien' }],
     prestations: [PrestationSchema],
     facture: FactureSchema
 });
