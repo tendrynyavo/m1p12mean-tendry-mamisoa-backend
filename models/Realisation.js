@@ -22,8 +22,7 @@ const RealisationSchema = new mongoose.Schema({
     reference: { type: String, required: true },
     status: { type: Number, required: true },
     equipe: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Mecanicien' }],
-    prestations: [PrestationSchema],
-    facture: FactureSchema
+    prestations: [PrestationSchema]
 });
 
 module.exports = mongoose.model('Realisation', RealisationSchema);

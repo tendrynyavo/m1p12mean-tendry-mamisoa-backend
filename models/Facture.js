@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const FactureSchema = new mongoose.Schema({
+    realisation: { type: mongoose.Schema.Types.ObjectId, ref: 'Realisation', required: true },
     dateFacture: { type: Date, required: true },
     status: { type: Number, required: true },
     pieces: [{
