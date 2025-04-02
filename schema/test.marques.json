@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "67ea6524ff69fc39988b86cb"
+  },
+  "nom": "Renault",
+  "modeles": [
+    {
+      "title": "Clio IV",
+      "annee": 2012,
+      "motorisations": [
+        {
+          "$oid": "67ea49dfacac2f51084b25fc"
+        }
+      ],
+      "_id": {
+        "$oid": "67ea6524ff69fc39988b86cc"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-03-31T09:49:24.911Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-31T09:49:24.911Z"
+  },
+  "__v": 0
+}]

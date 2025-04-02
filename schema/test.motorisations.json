@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "67ea482c8bc8f9a94286de82"
+  },
+  "nom": "2.0 TDI",
+  "type": "Diesel",
+  "createdAt": {
+    "$date": "2025-03-31T07:45:48.669Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-31T07:45:48.669Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ea49dfacac2f51084b25fc"
+  },
+  "nom": "2.0 TDI",
+  "type": "Diesel",
+  "modele": {
+    "$oid": "67e194b456cb38426c1bb6f1"
+  },
+  "createdAt": {
+    "$date": "2025-03-31T07:53:03.256Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-31T07:53:03.256Z"
+  },
+  "__v": 0
+}]

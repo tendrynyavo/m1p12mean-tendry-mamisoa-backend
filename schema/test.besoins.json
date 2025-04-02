@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "67eaddd6faaa7a6478a76f91"
+  },
+  "motorisation": {
+    "$oid": "67ea482c8bc8f9a94286de82"
+  },
+  "prestations": [
+    {
+      "nom": "Vidange",
+      "tempsEstime": 1,
+      "pieces": [
+        {
+          "nom": "Filtre à huile",
+          "unite": "pièce",
+          "quantite": 1,
+          "prixUnitaire": 10,
+          "_id": {
+            "$oid": "67eaddd6faaa7a6478a76f93"
+          }
+        },
+        {
+          "nom": "Huile moteur",
+          "unite": "litre",
+          "quantite": 8,
+          "prixUnitaire": 30,
+          "_id": {
+            "$oid": "67eaddd6faaa7a6478a76f94"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "67eaddd6faaa7a6478a76f92"
+      }
+    },
+    {
+      "nom": "Freinage",
+      "tempsEstime": 2,
+      "pieces": [
+        {
+          "nom": "Disques de frein",
+          "unite": "pièce",
+          "quantite": 2,
+          "prixUnitaire": 50,
+          "_id": {
+            "$oid": "67eaddd6faaa7a6478a76f96"
+          }
+        },
+        {
+          "nom": "Plaquettes de frein",
+          "unite": "jeu",
+          "quantite": 1,
+          "prixUnitaire": 30,
+          "_id": {
+            "$oid": "67eaddd6faaa7a6478a76f97"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "67eaddd6faaa7a6478a76f95"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-03-31T18:24:22.555Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-31T18:24:22.555Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "67e1a33e63b09120135677a9"
+  },
+  "immatricule": "AB-123-CD",
+  "motorisation": {
+    "$oid": "67dd506667a6ee4123d69231"
+  },
+  "client": {
+    "_id": {
+      "$oid": "67dd506667a6ee4123d69232"
+    },
+    "nom": "Dupont",
+    "prenom": "Jean"
+  }
+}]
