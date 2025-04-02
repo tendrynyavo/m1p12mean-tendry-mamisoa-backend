@@ -3,6 +3,7 @@ const router = express.Router();
 const {
     getDiagnostics,
     getDiagnosticById,
+    getDiagnosticsByMecanicien,
     createDiagnostic,
     updateDiagnostic,
     deleteDiagnostic
@@ -17,7 +18,14 @@ router.get('/', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-
+router.get('/mecanicien/:id', async (req, res) => {
+    try {
+        const diagnostics = await getDiagnosticsByMecanicien(req.params.id);
+        res.status(200).json(diagnostics);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
 // GET diagnostic by id
 router.get('/:id', async (req, res) => {
     try {

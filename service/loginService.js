@@ -1,5 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
+const { getDetailsFromToken } = require('./authService');
 
 async function getUserDetailsByEmailAndPassword(email, password) {
     const user = await User.findOne({ email: email, password: password });
@@ -26,6 +27,17 @@ async function generateTokenFromUserDetails(data) {
     return generateToken(payload);
 }
 
+async function getUserDetailsByToken(data) {
+    const decoded = getDetailsFromToken(data.token, process.env.SECRET_KEY);
+    // const user = await User.findOne({ email: email });
+    // if (!user) {
+    //     throw new Error("User not found");
+    // }
+    // return user;
+    return decoded;
+}
+
 module.exports = {
-    generateTokenFromUserDetails
+    generateTokenFromUserDetails,
+    getUserDetailsByToken
 };
