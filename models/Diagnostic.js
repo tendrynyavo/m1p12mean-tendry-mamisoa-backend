@@ -39,7 +39,7 @@ const DiagnosticSchema = new mongoose.Schema({
     dateFin: { type: Date },
     reference: { type: String, required: true },
     status: { type: Number, required: true },
-    mecanicien: { type : mongoose.Schema.Types.ObjectId, ref: 'Mecanicien', required: true },
+    user: { type : mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     prestations: [PrestationSchema]
 });
 

@@ -21,7 +21,7 @@ const RealisationSchema = new mongoose.Schema({
     dateFin: { type: Date, required: true },
     reference: { type: String, required: true },
     status: { type: Number, required: true },
-    equipe: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Mecanicien' }],
+    equipes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
     prestations: [PrestationSchema]
 });
 
