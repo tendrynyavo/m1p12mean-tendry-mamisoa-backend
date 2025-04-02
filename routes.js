@@ -38,6 +38,10 @@ let routes = [
     {
         path: '/diagnostics',
         route: require('./routes/diagnosticRoutes')
+    },
+    {
+        path: '/realisations',
+        route: require('./routes/diagnosticRoutes')
     }
 ]; 
 

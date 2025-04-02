@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const { generateTokenFromUserDetails } = require('../service/loginService');
+const { 
+    generateTokenFromUserDetails,
+    getUserDetailsByToken
+} = require('../service/loginService');
 
 router.post('/', async (req, res) => {
     try{
