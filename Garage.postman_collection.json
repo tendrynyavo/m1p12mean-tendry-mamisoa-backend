@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "deeeeb20-a29d-4ecd-b9c7-9ea0b25b79e7",
+		"name": "Garage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24610516"
+	},
+	"item": [
+		{
+			"name": "marques",
+			"item": [
+				{
+					"name": "POST /marques",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"Renault\",\r\n    \"modeles\": [\r\n        { \r\n            \"nom\": \"Clio IV\",\r\n            \"annee\": 2012,\r\n            \"motorisation\": [\r\n                {\r\n                    \"nom\": \"1.5 dCi 90\",\r\n                    \"type\": \"Essence\"\r\n                },\r\n                {\r\n                    \"nom\": \"1.2 TCe 120\",\r\n                    \"type\": \"Essence\"\r\n                }\r\n            ]\r\n        },\r\n        { \r\n            \"nom\": \"Mégane\",\r\n            \"annee\": 2016,\r\n            \"motorisation\": [\r\n                {\r\n                    \"nom\": \"1.5 dCi 90\",\r\n                    \"type\": \"Essence\"\r\n                },\r\n                {\r\n                    \"nom\": \"1.2 TCe 120\",\r\n                    \"type\": \"Electrique\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/marques",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"marques"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /marques",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "voitures",
+			"item": [
+				{
+					"name": "GET /voitures",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "motorisations",
+			"item": [
+				{
+					"name": "GET /motorisations",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "POST /motorisations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"2.0 TDI\",\r\n    \"type\": \"Diesel\",\r\n    \"marque\" : \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/motorisations",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"motorisations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "besoins",
+			"item": [
+				{
+					"name": "GET /besoins",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "POST /besoins",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/besoins",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"besoins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /besoins/motorisations",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "diagnostic",
+			"item": [
+				{
+					"name": "GET /diagnostics",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "POST /diagnostics",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/diagnostics",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"diagnostics"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
