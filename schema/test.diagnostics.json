@@ -1,137 +1,41 @@
 [{
   "_id": {
-    "$oid": "67eb05c6cb6b0c882b0f834b"
+    "$oid": "67ed2863075a718a70581e27"
+  },
+  "voiture": {
+    "$oid": "67e1a33e63b09120135677a9"
   },
   "dateDebut": {
-    "$date": "2025-03-31T21:14:46.054Z"
+    "$date": "2025-03-01T09:00:00.000Z"
   },
-  "reference": "123456",
-  "status": 0,
+  "dateFin": {
+    "$date": "2025-03-01T10:00:00.000Z"
+  },
+  "reference": "DIAG-2025-001",
+  "status": 1,
   "mecanicien": {
-    "$oid": "67dd506667a6ee4123d69234"
+    "$oid": "67ed2804de5a8a9be4b37473"
   },
   "prestations": [
     {
-      "nom": "Freinage",
-      "tempsEstime": 2,
+      "nom": "Vidange",
+      "tempsEstime": 1,
       "pieces": [
         {
-          "nom": "Disques de frein",
+          "nom": "Filtre à huile",
           "unite": "pièce",
-          "quantite": 2,
-          "prixUnitaire": 50
+          "quantite": 1,
+          "prixUnitaire": 10
         },
         {
-          "nom": "Plaquettes de frein",
-          "unite": "jeu",
-          "quantite": 1,
-          "prixUnitaire": 30
-        }
-      ]
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67eb05c9cb6b0c882b0f834d"
-  },
-  "dateDebut": {
-    "$date": "2025-03-31T21:14:49.433Z"
-  },
-  "reference": "123456",
-  "status": 0,
-  "mecanicien": {
-    "$oid": "67dd506667a6ee4123d69234"
-  },
-  "prestations": [
-    {
-      "nom": "Freinage",
-      "tempsEstime": 2,
-      "pieces": [
-        {
-          "nom": "Disques de frein",
-          "unite": "pièce",
-          "quantite": 2,
-          "prixUnitaire": 50
-        },
-        {
-          "nom": "Plaquettes de frein",
-          "unite": "jeu",
-          "quantite": 1,
-          "prixUnitaire": 30
-        }
-      ]
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67eb05dacb6b0c882b0f834f"
-  },
-  "dateDebut": {
-    "$date": "2025-03-31T21:15:05.959Z"
-  },
-  "reference": "123456",
-  "status": 0,
-  "mecanicien": {
-    "$oid": "67dd506667a6ee4123d69234"
-  },
-  "prestations": [
-    {
-      "nom": "Freinage",
-      "tempsEstime": 2,
-      "pieces": [
-        {
-          "nom": "Disques de frein",
-          "unite": "pièce",
-          "quantite": 2,
-          "prixUnitaire": 50
-        },
-        {
-          "nom": "Plaquettes de frein",
-          "unite": "jeu",
-          "quantite": 1,
+          "nom": "Huile moteur",
+          "unite": "litre",
+          "quantite": 8,
           "prixUnitaire": 30
         }
       ]
     },
     {
-      "nom": "Vidange",
-      "tempsEstime": 1,
-      "pieces": [
-        {
-          "nom": "Filtre à huile",
-          "unite": "pièce",
-          "quantite": 1,
-          "prixUnitaire": 10
-        },
-        {
-          "nom": "Huile moteur",
-          "unite": "litre",
-          "quantite": 8,
-          "prixUnitaire": 30
-        }
-      ]
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67eb05eccb6b0c882b0f8351"
-  },
-  "dateDebut": {
-    "$date": "2025-03-31T21:15:24.253Z"
-  },
-  "reference": "123456",
-  "status": 0,
-  "mecanicien": {
-    "$oid": "67dd506667a6ee4123d69234"
-  },
-  "prestations": [
-    {
       "nom": "Freinage",
       "tempsEstime": 2,
       "pieces": [
@@ -145,58 +49,6 @@
           "nom": "Plaquettes de frein",
           "unite": "jeu",
           "quantite": 1,
-          "prixUnitaire": 30
-        }
-      ]
-    },
-    {
-      "nom": "Vidange",
-      "tempsEstime": 1,
-      "pieces": [
-        {
-          "nom": "Filtre à huile",
-          "unite": "pièce",
-          "quantite": 1,
-          "prixUnitaire": 10
-        },
-        {
-          "nom": "Huile moteur",
-          "unite": "litre",
-          "quantite": 8,
-          "prixUnitaire": 30
-        }
-      ]
-    }
-  ],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "67eb0689cb6b0c882b0f8354"
-  },
-  "dateDebut": {
-    "$date": "2025-03-31T21:18:01.621Z"
-  },
-  "reference": "123456",
-  "status": 0,
-  "mecanicien": {
-    "$oid": "67dd506667a6ee4123d69234"
-  },
-  "prestations": [
-    {
-      "nom": "Vidange",
-      "tempsEstime": 1,
-      "pieces": [
-        {
-          "nom": "Filtre à huile",
-          "unite": "pièce",
-          "quantite": 1,
-          "prixUnitaire": 10
-        },
-        {
-          "nom": "Huile moteur",
-          "unite": "litre",
-          "quantite": 8,
           "prixUnitaire": 30
         }
       ]

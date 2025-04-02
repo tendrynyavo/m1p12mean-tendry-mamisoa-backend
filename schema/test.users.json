@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "67ed27dbde5a8a9be4b37471"
+  },
+  "name": "Dupont",
+  "firstName": "Jean",
+  "email": "jean.dupont@gmail.com",
+  "password": "hashedPassword123",
+  "role": 0,
+  "createdAt": {
+    "$date": "2025-04-02T12:04:43.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-02T12:04:43.869Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ed2804de5a8a9be4b37473"
+  },
+  "name": "Mecanicien 1",
+  "firstName": "Mecanicien 1",
+  "email": "jean.dupont@gmail.com",
+  "password": "hashedPassword123",
+  "role": 10,
+  "createdAt": {
+    "$date": "2025-04-02T12:05:24.940Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-02T12:05:24.940Z"
+  },
+  "__v": 0
+}]
