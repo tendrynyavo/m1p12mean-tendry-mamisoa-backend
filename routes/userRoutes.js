@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createUser, getAllUsers, updateUserById, deleteUserById } = require('../service/userService');
+const { createUser, getAllUsers, getUserById, updateUserById, deleteUserById } = require('../service/userService');
 
 // Créer un user
 router.post('/', async (req, res) => {
@@ -18,6 +18,15 @@ router.get('/', async (req, res) => {
         const datas = await getAllUsers();
         return res.json({ Success: true, Message: "", Data: datas });
     } catch(error) {
+        return res.json({ Success: false, Message: error.message });
+    }
+});
+
+router.get('/:id', async (req, res) => {
+    try{
+        const response = await getUserById(req.params.id);
+        return res.json({ Success: true, Message: "", Data: response });
+    }catch(error){
         return res.json({ Success: false, Message: error.message });
     }
 });

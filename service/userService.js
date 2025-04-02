@@ -16,6 +16,11 @@ async function updateUserById(id, data) {
     return user;
 }
 
+async function getUserById(id) {
+    const user = await User.findById(id);
+    return user;
+}
+
 async function deleteUserById(id) {
     await User.findByIdAndDelete(id);
 }
@@ -24,5 +29,6 @@ module.exports = {
     createUser,
     getAllUsers,
     updateUserById,
-    deleteUserById
+    deleteUserById,
+    getUserById
 };

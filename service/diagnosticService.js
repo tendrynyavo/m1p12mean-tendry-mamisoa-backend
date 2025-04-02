@@ -11,7 +11,8 @@ const getDiagnostics = async () => {
 
 const getDiagnosticsByMecanicien = async (mecanicienId) => {
     try {
-        return await Diagnostic.find({ mecanicien: mecanicienId }).populate('mecanicien');
+        const diagnostics = await Diagnostic.find({ mecanicien: mecanicienId }).populate('mecanicien');
+        return diagnostics;
     } catch (error) {
         throw new Error(`Error fetching diagnostics: ${error.message}`);
     }
